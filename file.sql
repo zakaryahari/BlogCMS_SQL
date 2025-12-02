@@ -28,3 +28,11 @@ INSERT INTO categorie (libelle) VALUES
 
 select * from categorie;
 
+INSERT INTO article (nom_article, contenu, date_creation, date_modification, id_categorie, username) VALUES 
+('L''essor de l''IA au Maroc', 'Le Maroc connaît une croissance rapide dans le secteur de l''intelligence artificielle avec des startups à Casablanca et Rabat...', '2024-05-01', '2024-05-02', 1, 'admin_amine'),
+('Le Secret du Couscous aux 7 légumes', 'Pour réussir un vrai couscous marocain, il faut d''abord bien choisir sa semoule et utiliser du smen beldi...', '2024-05-10', '2024-05-10', 2, 'fatima_dev'),
+('Derby Casablanca : Wydad vs Raja', 'L''ambiance au complexe Mohammed V était électrique hier soir lors du grand derby...', '2024-05-15', '2024-05-15', 3, 'youssef_casa');
+
+select * from article;
+
+
