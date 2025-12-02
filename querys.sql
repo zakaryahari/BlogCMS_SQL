@@ -25,3 +25,22 @@ where date_creation < '2024-01-01';
 DELETE from commentaire 
 WHERE status = 'spam' AND date_commentaire < '2024-01-01'
 
+-- Q5:WHERE - Filtrage temporel
+
+SELECT * FROM article 
+WHERE date_creation > '2024-12-01';
+
+-- Q6:ORDER BY - Tri chronologique
+
+select * from utilisateur
+ORDER BY date_inscription ASC
+
+-- Q7:LIMIT - Articles récents
+
+SELECT * FROM article 
+ORDER BY date_creation DESC
+LIMIT 5;
+
+-- Q8:DISTINCT - Rôles uniques
+
+select DISTINCT role from utilisateur
