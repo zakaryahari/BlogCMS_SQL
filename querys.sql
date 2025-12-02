@@ -23,6 +23,5 @@ where date_creation < '2024-01-01';
 -- Q4:DELETE - Nettoyage des commentaires
 
 DELETE from commentaire 
-WHERE status = 'spam' AND date_commentaire < '2024-01-01';
-
+WHERE status = 'spam' AND date_commentaire < '2024-01-01'
 
