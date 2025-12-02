@@ -35,4 +35,11 @@ INSERT INTO article (nom_article, contenu, date_creation, date_modification, id_
 
 select * from article;
 
+INSERT INTO commentaire (contenu_commentaire, date_commentaire, username, id_article) VALUES 
+('Super article, merci pour l''info !', '2024-05-03', 'fatima_dev', 1),
+('TBarkallah 3lik, ça donne faim.', '2024-05-11', 'youssef_casa', 2),
+('Dima Raja !', '2024-05-16', 'leila_travel', 3),
+('Est-ce qu''on peut utiliser de l''huile d''argan ?', '2024-05-12', NULL, 2), 
+('Vive le football marocain.', '2024-05-17', NULL, 3); 
 
+select * from commentaire;
