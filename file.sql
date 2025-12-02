@@ -51,3 +51,25 @@ ALTER table utilisateur drop constraint role_check ;
 
 ALTER table utilisateur add constraint role_check check (role in ('admin','author'));
 
+
+INSERT INTO utilisateur (username, nom, prenom, email, mod_de_pass, date_inscription, role) VALUES
+('admin_blog', NULL, NULL, 'admin@blogcms.com', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-01-15', 'admin'),
+('marie_dubois', NULL, NULL, 'marie.dubois@email.com', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-02-10', 'author'),
+('pierre_leroy', NULL, NULL, 'pierre.leroy@gmail.com', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-02-15', 'author'),
+('sophie_martin', NULL, NULL, 'sophie.martin@protonmail.com', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-03-01', 'author'),
+('jean_dupont', NULL, NULL, 'jean.dupont@yahoo.fr', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-03-10', 'author'),
+('lucie_bernard', NULL, NULL, 'lucie.bernard@email.com', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-03-15', 'author'),
+('thomas_petit', NULL, NULL, 'thomas.petit@gmail.com', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-03-20', 'author'),
+('julie_roux', NULL, NULL, 'julie.roux@protonmail.com', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-04-01', 'author'),
+('marc_vincent', NULL, NULL, 'marc.vincent@yahoo.fr', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn9p36WQoeG6Lruj3vjPGga31lW', '2024-04-05', 'author'),
+('isabelle_leroy', NULL, NULL, 'isabelle.leroy@gmail.com', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-04-10', 'author'),
+('david_morel', NULL, NULL, 'david.morel@email.com', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-04-15', 'author'),
+('caroline_duval', NULL, NULL, 'caroline.duval@protonmail.com', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-05-02', 'author'),
+('nicolas_lambert', NULL, NULL, 'nicolas.lambert@gmail.com', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-05-10', 'author'),
+('elodie_garnier', NULL, NULL, 'elodie.garnier@email.com', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-05-20', 'author'),
+('antoine_chevalier', NULL, NULL, 'antoine.chevalier@yahoo.fr', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-06-01', 'author'),
+('clara_royer', NULL, NULL, 'clara.royer@protonmail.com', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-06-10', 'author'),
+('quentin_menard', NULL, NULL, 'quentin.menard@gmail.com', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-06-15', 'author'),
+('amelie_colin', NULL, NULL, 'amelie.colin@email.com', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-07-03', 'author'),
+('vincent_gauthier', NULL, NULL, 'vincent.gauthier@protonmail.com', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-07-12', 'author'),
+('marine_lebrun', NULL, NULL, 'marine.lebrun@gmail.com', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-07-20', 'author');
