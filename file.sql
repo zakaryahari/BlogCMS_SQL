@@ -73,3 +73,16 @@ INSERT INTO utilisateur (username, nom, prenom, email, mod_de_pass, date_inscrip
 ('amelie_colin', NULL, NULL, 'amelie.colin@email.com', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-07-03', 'author'),
 ('vincent_gauthier', NULL, NULL, 'vincent.gauthier@protonmail.com', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-07-12', 'author'),
 ('marine_lebrun', NULL, NULL, 'marine.lebrun@gmail.com', '$2y$10$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW', '2024-07-20', 'author');
+
+ALTER TABLE categorie ADD description text;
+
+INSERT INTO categorie (id_categorie, libelle, description) VALUES
+(1, 'Technologie', 'Actualités, tutoriels et analyses sur les nouvelles technologies'),
+(2, 'Santé', 'Conseils santé, bien-être et médecine préventive'),
+(3, 'Voyage', 'Récits de voyage, guides pratiques et conseils touristiques'),
+(4, 'Cuisine', 'Recettes, techniques culinaires et astuces de cuisine'),
+(5, 'Sport', 'Actualités sportives, conseils d\'entraînement et nutrition'),
+(6, 'Éducation', 'Pédagogie, conseils d\'apprentissage et innovations éducatives'),
+(7, 'Finance', 'Gestion budgétaire, investissements et actualités économiques'),
+(8, 'Mode', 'Tendances, conseils style et actualités de la mode');
+
