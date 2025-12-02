@@ -6,3 +6,5 @@ create table utilisateur (username varchar(50) PRIMARY KEY unique , nom varchar(
 
 create table categorie (id_categorie int primary key auto_increment, libelle varchar(50));
 
+create table article (id_article int primary key auto_increment, nom_article varchar(50), contenu varchar(500), date_création date, date_modification date, id_categorie int, username varchar(50) , foreign key (id_categorie) references categorie (id_categorie) , foreign key (username) references utilisateur (username));
+
