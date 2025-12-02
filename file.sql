@@ -91,18 +91,6 @@ ALTER TABLE commentaire add email  varchar(100) unique;
 
 ALTER TABLE commentaire add status varchar(50) check (status in ('approved','spam'));
 
-
-CREATE TABLE commentaire (
-    id_commentaire INT PRIMARY KEY AUTO_INCREMENT, 
-    contenu_commentaire TEXT, 
-    date_commentaire DATE,
-    username VARCHAR(50) NULL, 
-    id_article INT, 
-    FOREIGN KEY (id_article) REFERENCES article (id_article), 
-    FOREIGN KEY (username) REFERENCES utilisateur (username)
-);
-
-
 ALTER TABLE commentaire ADD email VARCHAR(100) UNIQUE;
 ALTER TABLE commentaire ADD status VARCHAR(50) CHECK (status IN ('approved', 'spam', 'pending')); 
 

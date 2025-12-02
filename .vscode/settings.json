@@ -1,0 +1,20 @@
+{
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "ssh": "Disabled",
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "MyLocalDB",
+      "group": "MyLocalDB",
+      "database": "BlogCMS",
+      "username": "root",
+      "password": "ZAKAsql//123"
+    }
+  ]
+}
