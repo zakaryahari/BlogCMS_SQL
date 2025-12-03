@@ -44,3 +44,25 @@ LIMIT 5;
 -- Q8:DISTINCT - Rôles uniques
 
 select DISTINCT role from utilisateur
+
+-- Q9:AND/OR - Articles par catégorie et statut
+
+select ar.nom_article FROM article ar
+join categorie ca on ar.id_categorie = ca.id_categorie
+where ca.libelle = 'Technologie' and status in ('published','draft');
+
+-- Q10:BETWEEN - Commentaires par période
+
+select * from commentaire 
+where date_commentaire BETWEEN '2024-12-01' and '2024-12-15'
+
+-- Q11:IN - Articles par catégories multiples
+
+select ar.nom_article FROM article ar
+join categorie ca on ar.id_categorie = ca.id_categorie
+where ca.libelle in ('PHP','Base de données','JavaScript');
+
+-- Q12:LIKE - Recherche par email
+
+select * from utilisateur
+where email like '%@gmail.com';
